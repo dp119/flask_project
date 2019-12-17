@@ -12,7 +12,13 @@ def hello():
 
 @app.route('/about')
 def deepu():
-    return render_template('about.html')
+    name = "Deepak Prasad"
+    return render_template('about.html', name2=name)
+
+
+@app.route('/bootstrap')
+def bootstrap():
+    return render_template('bootstrap.html')
 
 
 app.run(debug=True)
